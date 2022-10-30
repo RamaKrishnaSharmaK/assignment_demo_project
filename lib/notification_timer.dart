@@ -24,7 +24,6 @@ class NotificationTimer extends StatelessWidget {
       var entryList = itemName.entries.toList();
       dummyListCount.add(entryList[2].value);
     }
-
     count = (int.tryParse(dummyListCount.first));
     countdownTimer =
         Timer.periodic(const Duration(seconds: 1), (_) => setCountDown(count));
